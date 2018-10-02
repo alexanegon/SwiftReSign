@@ -114,3 +114,6 @@ rm "$TMPDIR/provisioning.plist"
 rm "$TMPDIR/entitlements.plist"
 
 echo "SUCCESS"
+
+# Reveal resigned IPA file in the Finder.
+open -R "$OUTDIR/$filename"
