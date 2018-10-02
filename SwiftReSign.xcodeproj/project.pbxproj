@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9195BF46215CAC0300CC64D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF45215CAC0300CC64D5 /* AppDelegate.swift */; };
+		9195BF4A215CAC0500CC64D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9195BF49215CAC0500CC64D5 /* Assets.xcassets */; };
+		9195BF4D215CAC0500CC64D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9195BF4B215CAC0500CC64D5 /* Main.storyboard */; };
+		9195BF59215CAF8000CC64D5 /* ResignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF58215CAF8000CC64D5 /* ResignViewController.swift */; };
+		9195BF63215CBF6E00CC64D5 /* ResignPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF62215CBF6E00CC64D5 /* ResignPresenter.swift */; };
+		9195BF66215CBFCE00CC64D5 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF65215CBFCE00CC64D5 /* BasePresenter.swift */; };
+		9195BF68215CC15C00CC64D5 /* FeedbackViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF67215CC15C00CC64D5 /* FeedbackViewInterface.swift */; };
+		9195BF6A215CC1B000CC64D5 /* ResignViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF69215CC1B000CC64D5 /* ResignViewInterface.swift */; };
+		9195BF6C215CD06000CC64D5 /* ResignConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF6B215CD06000CC64D5 /* ResignConfigurator.swift */; };
+		9195BF6E215CD08100CC64D5 /* BaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF6D215CD08100CC64D5 /* BaseConfigurator.swift */; };
+		9195BF71215CD23E00CC64D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF70215CD23E00CC64D5 /* Constants.swift */; };
+		9195BF74215CD2E300CC64D5 /* ResignWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF73215CD2E300CC64D5 /* ResignWireframe.swift */; };
+		9195BF7A215CDB7A00CC64D5 /* RootWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF78215CDB7A00CC64D5 /* RootWindowController.swift */; };
+		9195BF7B215CDB7A00CC64D5 /* RootWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9195BF79215CDB7A00CC64D5 /* RootWindowController.xib */; };
+		9195BF80215E1A5800CC64D5 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF7F215E1A5800CC64D5 /* RootWireframe.swift */; };
+		9195BF86215E2B9D00CC64D5 /* SignIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF85215E2B9D00CC64D5 /* SignIdentity.swift */; };
+		9195BF88215E2D0700CC64D5 /* SignError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF87215E2D0700CC64D5 /* SignError.swift */; };
+		9195BF8A215E3B5F00CC64D5 /* SignIdentity+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF89215E3B5F00CC64D5 /* SignIdentity+Validate.swift */; };
+		9195BF8D215E3CEC00CC64D5 /* resign.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9195BF8B215E3CEC00CC64D5 /* resign.sh */; };
+		9195BF8E215E3CEC00CC64D5 /* entitlements.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9195BF8C215E3CEC00CC64D5 /* entitlements.sh */; };
+		9195BF91215E4D3800CC64D5 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF90215E4D3800CC64D5 /* Script.swift */; };
+		9195BF932162138300CC64D5 /* SignIdentitySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF922162138300CC64D5 /* SignIdentitySource.swift */; };
+		9195BF962162392400CC64D5 /* Bundle+DisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9195BF952162392400CC64D5 /* Bundle+DisplayName.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9195BF42215CAC0300CC64D5 /* SwiftReSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9195BF45215CAC0300CC64D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9195BF49215CAC0500CC64D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9195BF4C215CAC0500CC64D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9195BF4E215CAC0500CC64D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9195BF4F215CAC0500CC64D5 /* SwiftReSign.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftReSign.entitlements; sourceTree = "<group>"; };
+		9195BF58215CAF8000CC64D5 /* ResignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignViewController.swift; sourceTree = "<group>"; };
+		9195BF62215CBF6E00CC64D5 /* ResignPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignPresenter.swift; sourceTree = "<group>"; };
+		9195BF65215CBFCE00CC64D5 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		9195BF67215CC15C00CC64D5 /* FeedbackViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewInterface.swift; sourceTree = "<group>"; };
+		9195BF69215CC1B000CC64D5 /* ResignViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignViewInterface.swift; sourceTree = "<group>"; };
+		9195BF6B215CD06000CC64D5 /* ResignConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignConfigurator.swift; sourceTree = "<group>"; };
+		9195BF6D215CD08100CC64D5 /* BaseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfigurator.swift; sourceTree = "<group>"; };
+		9195BF70215CD23E00CC64D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9195BF73215CD2E300CC64D5 /* ResignWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignWireframe.swift; sourceTree = "<group>"; };
+		9195BF78215CDB7A00CC64D5 /* RootWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindowController.swift; sourceTree = "<group>"; };
+		9195BF79215CDB7A00CC64D5 /* RootWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootWindowController.xib; sourceTree = "<group>"; };
+		9195BF7F215E1A5800CC64D5 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		9195BF85215E2B9D00CC64D5 /* SignIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIdentity.swift; sourceTree = "<group>"; };
+		9195BF87215E2D0700CC64D5 /* SignError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignError.swift; sourceTree = "<group>"; };
+		9195BF89215E3B5F00CC64D5 /* SignIdentity+Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignIdentity+Validate.swift"; sourceTree = "<group>"; };
+		9195BF8B215E3CEC00CC64D5 /* resign.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = resign.sh; sourceTree = "<group>"; };
+		9195BF8C215E3CEC00CC64D5 /* entitlements.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = entitlements.sh; sourceTree = "<group>"; };
+		9195BF90215E4D3800CC64D5 /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		9195BF922162138300CC64D5 /* SignIdentitySource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIdentitySource.swift; sourceTree = "<group>"; };
+		9195BF952162392400CC64D5 /* Bundle+DisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+DisplayName.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9195BF3F215CAC0300CC64D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9195BF39215CAC0300CC64D5 = {
+			isa = PBXGroup;
+			children = (
+				9195BF44215CAC0300CC64D5 /* SwiftReSign */,
+				9195BF43215CAC0300CC64D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9195BF43215CAC0300CC64D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF42215CAC0300CC64D5 /* SwiftReSign.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9195BF44215CAC0300CC64D5 /* SwiftReSign */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF5A215CAFCC00CC64D5 /* Artwork */,
+				9195BF5C215CB09100CC64D5 /* Interface */,
+				9195BF5B215CB00900CC64D5 /* Resources */,
+				9195BF55215CAF3E00CC64D5 /* Source */,
+			);
+			path = SwiftReSign;
+			sourceTree = "<group>";
+		};
+		9195BF55215CAF3E00CC64D5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF6F215CD23100CC64D5 /* Common */,
+				9195BF5F215CB11800CC64D5 /* Core */,
+				9195BF83215E2B2C00CC64D5 /* Entities */,
+				9195BF56215CAF5F00CC64D5 /* Scenes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9195BF56215CAF5F00CC64D5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF75215CDB2D00CC64D5 /* Root */,
+				9195BF57215CAF6900CC64D5 /* Resign */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9195BF57215CAF6900CC64D5 /* Resign */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF6B215CD06000CC64D5 /* ResignConfigurator.swift */,
+				9195BF64215CBF8000CC64D5 /* Presenter */,
+				9195BF72215CD2B800CC64D5 /* Route */,
+				9195BF61215CBF5700CC64D5 /* View */,
+			);
+			path = Resign;
+			sourceTree = "<group>";
+		};
+		9195BF5A215CAFCC00CC64D5 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF49215CAC0500CC64D5 /* Assets.xcassets */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		9195BF5B215CB00900CC64D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF4E215CAC0500CC64D5 /* Info.plist */,
+				9195BF4F215CAC0500CC64D5 /* SwiftReSign.entitlements */,
+				9195BF8F215E3CF000CC64D5 /* Scripts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9195BF5C215CB09100CC64D5 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF4B215CAC0500CC64D5 /* Main.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		9195BF5F215CB11800CC64D5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF45215CAC0300CC64D5 /* AppDelegate.swift */,
+				9195BF65215CBFCE00CC64D5 /* BasePresenter.swift */,
+				9195BF6D215CD08100CC64D5 /* BaseConfigurator.swift */,
+				9195BF67215CC15C00CC64D5 /* FeedbackViewInterface.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9195BF61215CBF5700CC64D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF58215CAF8000CC64D5 /* ResignViewController.swift */,
+				9195BF69215CC1B000CC64D5 /* ResignViewInterface.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9195BF64215CBF8000CC64D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF62215CBF6E00CC64D5 /* ResignPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9195BF6F215CD23100CC64D5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF942162391400CC64D5 /* Helpers */,
+				9195BF70215CD23E00CC64D5 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9195BF72215CD2B800CC64D5 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF73215CD2E300CC64D5 /* ResignWireframe.swift */,
+			);
+			name = Route;
+			sourceTree = "<group>";
+		};
+		9195BF75215CDB2D00CC64D5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF82215E1AC200CC64D5 /* Route */,
+				9195BF7E215E1A1F00CC64D5 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9195BF7E215E1A1F00CC64D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF78215CDB7A00CC64D5 /* RootWindowController.swift */,
+				9195BF79215CDB7A00CC64D5 /* RootWindowController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9195BF82215E1AC200CC64D5 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF7F215E1A5800CC64D5 /* RootWireframe.swift */,
+			);
+			name = Route;
+			sourceTree = "<group>";
+		};
+		9195BF83215E2B2C00CC64D5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF84215E2B3E00CC64D5 /* Model */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9195BF84215E2B3E00CC64D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF87215E2D0700CC64D5 /* SignError.swift */,
+				9195BF85215E2B9D00CC64D5 /* SignIdentity.swift */,
+				9195BF89215E3B5F00CC64D5 /* SignIdentity+Validate.swift */,
+				9195BF922162138300CC64D5 /* SignIdentitySource.swift */,
+				9195BF90215E4D3800CC64D5 /* Script.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9195BF8F215E3CF000CC64D5 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF8C215E3CEC00CC64D5 /* entitlements.sh */,
+				9195BF8B215E3CEC00CC64D5 /* resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		9195BF942162391400CC64D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9195BF952162392400CC64D5 /* Bundle+DisplayName.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9195BF41215CAC0300CC64D5 /* SwiftReSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9195BF52215CAC0500CC64D5 /* Build configuration list for PBXNativeTarget "SwiftReSign" */;
+			buildPhases = (
+				9195BF3E215CAC0300CC64D5 /* Sources */,
+				9195BF3F215CAC0300CC64D5 /* Frameworks */,
+				9195BF40215CAC0300CC64D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftReSign;
+			productName = iResign;
+			productReference = 9195BF42215CAC0300CC64D5 /* SwiftReSign.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9195BF3A215CAC0300CC64D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Eleven Paths";
+				TargetAttributes = {
+					9195BF41215CAC0300CC64D5 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9195BF3D215CAC0300CC64D5 /* Build configuration list for PBXProject "SwiftReSign" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9195BF39215CAC0300CC64D5;
+			productRefGroup = 9195BF43215CAC0300CC64D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9195BF41215CAC0300CC64D5 /* SwiftReSign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9195BF40215CAC0300CC64D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9195BF8E215E3CEC00CC64D5 /* entitlements.sh in Resources */,
+				9195BF4A215CAC0500CC64D5 /* Assets.xcassets in Resources */,
+				9195BF7B215CDB7A00CC64D5 /* RootWindowController.xib in Resources */,
+				9195BF4D215CAC0500CC64D5 /* Main.storyboard in Resources */,
+				9195BF8D215E3CEC00CC64D5 /* resign.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9195BF3E215CAC0300CC64D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9195BF74215CD2E300CC64D5 /* ResignWireframe.swift in Sources */,
+				9195BF63215CBF6E00CC64D5 /* ResignPresenter.swift in Sources */,
+				9195BF6C215CD06000CC64D5 /* ResignConfigurator.swift in Sources */,
+				9195BF68215CC15C00CC64D5 /* FeedbackViewInterface.swift in Sources */,
+				9195BF6A215CC1B000CC64D5 /* ResignViewInterface.swift in Sources */,
+				9195BF66215CBFCE00CC64D5 /* BasePresenter.swift in Sources */,
+				9195BF46215CAC0300CC64D5 /* AppDelegate.swift in Sources */,
+				9195BF932162138300CC64D5 /* SignIdentitySource.swift in Sources */,
+				9195BF88215E2D0700CC64D5 /* SignError.swift in Sources */,
+				9195BF8A215E3B5F00CC64D5 /* SignIdentity+Validate.swift in Sources */,
+				9195BF7A215CDB7A00CC64D5 /* RootWindowController.swift in Sources */,
+				9195BF80215E1A5800CC64D5 /* RootWireframe.swift in Sources */,
+				9195BF59215CAF8000CC64D5 /* ResignViewController.swift in Sources */,
+				9195BF962162392400CC64D5 /* Bundle+DisplayName.swift in Sources */,
+				9195BF91215E4D3800CC64D5 /* Script.swift in Sources */,
+				9195BF6E215CD08100CC64D5 /* BaseConfigurator.swift in Sources */,
+				9195BF86215E2B9D00CC64D5 /* SignIdentity.swift in Sources */,
+				9195BF71215CD23E00CC64D5 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9195BF4B215CAC0500CC64D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9195BF4C215CAC0500CC64D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9195BF50215CAC0500CC64D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9195BF51215CAC0500CC64D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9195BF53215CAC0500CC64D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftReSign/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mas.SwiftReSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		9195BF54215CAC0500CC64D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftReSign/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mas.SwiftReSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9195BF3D215CAC0300CC64D5 /* Build configuration list for PBXProject "SwiftReSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9195BF50215CAC0500CC64D5 /* Debug */,
+				9195BF51215CAC0500CC64D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9195BF52215CAC0500CC64D5 /* Build configuration list for PBXNativeTarget "SwiftReSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9195BF53215CAC0500CC64D5 /* Debug */,
+				9195BF54215CAC0500CC64D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9195BF3A215CAC0300CC64D5 /* Project object */;
+}
