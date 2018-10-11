@@ -83,10 +83,18 @@ else
     /usr/libexec/PlistBuddy -c "Set:CFBundleIdentifier $BUNDLEID" "$APPDIR/Payload/$APPLICATION/Info.plist"
 fi
 
+echo "Remove Code Signature folders"
+find "$APPDIR" -name "_CodeSignature" -type d -delete
 
-echo "Get list of components and resign with certificate: $DEVELOPER"
-find -d "$APPDIR" \( -name "*.app" -o -name "*.appex" -o -name "*.framework" -o -name "*.dylib" \) > "$TMPDIR/components.txt"
+echo "Get list of frameworks and resign with certificate: $DEVELOPER"
+find -d "$APPDIR" -name "*.framework" > "$TMPDIR/frameworks.txt"
+var=$((0))
+while IFS='' read -r line || [[ -n "$line" ]]; do
+    /usr/bin/codesign --continue -f -s "$DEVELOPER" "$line"
+done < "$TMPDIR/frameworks.txt"
 
+echo "Get list of apps and extensions and resign with certificate: $DEVELOPER"
+find -d "$APPDIR" \( -name "*.app" -o -name "*.appex" \) > "$TMPDIR/components.txt"
 var=$((0))
 while IFS='' read -r line || [[ -n "$line" ]]; do
 	if [[ ! -z "${BUNDLEID}" ]] && [[ "$line" == *".appex"* ]]; then
@@ -106,9 +114,9 @@ zip -qr "../$filename" *
 cd ..
 mv $filename "$OUTDIR"
 
-
 echo "Clear temporary files"
 rm -rf "$APPDIR"
+rm "$TMPDIR/frameworks.txt"
 rm "$TMPDIR/components.txt"
 rm "$TMPDIR/provisioning.plist"
 rm "$TMPDIR/entitlements.plist"
